@@ -9,7 +9,7 @@ assert 'WANDB_API_KEY' in os.environ, "WANDB_API_KEY not found in environment va
 artifact_path = "ib-lowpri-dsr/mlops_dsr_batch_45/resnet18:v0"
 
 # define 
-MODELS_DIR = "../models"
+MODELS_DIR = "models"
 MODEL_FILENAME = "best_model.pth"
 
 # if dir des not exist, create it
