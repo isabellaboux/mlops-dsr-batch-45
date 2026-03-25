@@ -1,4 +1,4 @@
-wandb==0.21.3
+wandb==0.25.1
 fastapi[standard]==0.116.1
 torch==2.8.0
 torchvision==0.23.0
