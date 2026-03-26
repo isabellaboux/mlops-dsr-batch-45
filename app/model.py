@@ -56,6 +56,3 @@ def load_transforms() -> transforms.Compose:
                                  std=[0.229, 0.224, 0.225]),
         ]
     )
-
-load_transf = load_transforms()
-print(load_transf)
