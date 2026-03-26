@@ -13,6 +13,7 @@ MODEL_FILENAME = 'best_model.pth'
 os.makedirs(MODELS_DIR, exist_ok=True)
 
 def download_artifact():
+    '''Download teh model weights from wandb.'''
     load_env() # this loads the variables in the .env file into the environment variables
     assert 'WANDB_API_KEY' in os.environ, "WANDB_API_KEY not found in environment variables"
     
@@ -44,6 +45,7 @@ def load_model() -> ResNet:
     return model
 
 def load_transforms() -> transforms.Compose:
+    '''Load model transformations.'''
     return transforms.Compose(
         [
             transforms.Resize((256, 256)),
